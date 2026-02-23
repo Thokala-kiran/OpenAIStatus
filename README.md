@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # OpenAI Status Incident Viewer
 
 A small FastAPI app that fetches incidents, outage, or degradation update data from OpenAI Status and renders it as a simple HTML page.
@@ -10,9 +10,8 @@ A small FastAPI app that fetches incidents, outage, or degradation update data f
 - Renders incident `name` and `created_at` values in an HTML response.
 
 ## Current implementation notes
-- File used: `main.py`
-- `service.py` is currently empty.
-- In the current response format, incidents are displayed under a fixed product label: `OpenAI API`.
+- main.py contains the FastAPI application, startup polling workflow, and route handlers.
+- service.py contains helper logic for fetching and formatting incident data.
 
 ## Known limitation (confirmed)
 I confirmed (using direct API checks in Postman and AI Tools) that the current OpenAI incidents endpoint does not always include detailed component mapping in a way this app can directly render as per-product component detail for every incident.
