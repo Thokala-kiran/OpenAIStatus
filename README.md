@@ -53,6 +53,3 @@ Then open:
 - `GET /status` -> HTML page containing recent incident lines in this format:
   - `[created_at] Product: OpenAI API, status : incident_name`
 
-=======
-# OpenAIStatus
->>>>>>> 722ec943175d1fac40c42abcd6e73d69731ce5f5
