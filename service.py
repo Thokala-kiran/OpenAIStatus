@@ -12,7 +12,7 @@ def html_page(content: str) -> str:
       
       </head>
       <body>
-        header>
+        <header>
           <h1>OpenAI Status</h1>
           <p>Incident details</p>
           <hr />
