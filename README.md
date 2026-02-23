@@ -31,9 +31,10 @@ Suggested retention cleanup logic:
 3. Remove any stored incident older than cutoff.
 4. Keep only recent incidents for display/reporting.
 
-## Webhooks and localhost
-- Direct webhooks to `localhost:8000` are not possible from public services without tunneling.
-- If webhook testing is required, tools like **ngrok** can expose local FastAPI endpoints publicly.
+## Webhooks
+In a production environment, this polling mechanism could be replaced with:
+- Webhook-based automation via services like Pipedream or IFTTT
+- Or official webhook subscription if provided by the status provider
 
 ## Run locally
 ```bash
