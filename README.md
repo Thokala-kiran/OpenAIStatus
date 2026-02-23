@@ -44,8 +44,8 @@ uvicorn main:app --reload
 ```
 
 Then open:
-- `http://127.0.0.1:8000/`
-- `http://127.0.0.1:8000/status`
+- `[https://openaistatus.onrender.com/]`
+- `[https://openaistatus.onrender.com/status]`
 
 ## API behavior summary
 - `GET /` -> JSON welcome message.
