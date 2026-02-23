@@ -19,8 +19,6 @@ I confirmed (using direct API checks in Postman and AI Tools) that the current O
 
 Because of that, this project currently shows incident-level details (name + created time) instead of full component-level incident breakdown.
 
-## Polling approach (why and how)
-Since webhook callbacks to `localhost:8000` are not reachable from external systems by default, this project uses controlled polling instead of webhooks.
 
 ### Controlled polling policy
 - Pull incidents from the status API on a schedule.
