@@ -39,6 +39,7 @@ async def check_new_incidents():
         response = await client.get(STATUS_URL)
         data = response.json()
     incidents = data.get("incidents", [])
+    incidents.sort(key=lambda x: x["created_at"], reverse=True)
     current_ids = {incident["id"] for incident in incidents}
 
     new_ids = current_ids - last_incident_ids
