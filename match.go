@@ -45,6 +45,7 @@ func (m *Match) MatchLoop(ctx context.Context, logger runtime.Logger, db *sql.DB
 
 	for _, msg := range messages {
 		logger.Info("Received message: %s", string(msg.GetData()))
+		
 
 		
 	}
